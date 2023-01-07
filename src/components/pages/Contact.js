@@ -12,53 +12,54 @@ function Contact() {
     // Getting the value and name of the input which triggered the change
     const { name, value } = e.target;
 
-    // TODO: add message 
-    //Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
-    return name === 'contactName' ? setContactName(value) : setEmail(value);
+    if (name === 'contactName'){
+      return setContactName(value)
+    } else if (name === 'email') {
+      return setEmail(value)
+    } else if (name === 'message'){
+      return setMessage(value)
+    };
   };
 
   const handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
 
-    // Alert the user their first and last name, clear the inputs
-    // alert(`Hello ${firstName} ${lastName}`);
-    setContactName('');
-    setEmail('');
   };
 
   return (
-    <div>
-      {/* <p> */}
-        {/* Hello {firstName} {lastName} */}
-      {/* </p> */}
-      <form className="form">
-        <input
-          value={contactName}
-          name="contactName"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Name"
-        />
-        <input
-          value={email}
-          name="email"
-          onChange={handleInputChange}
-          type="email"
-          placeholder="Email"
-        />
-        <input
-          value={message}
-          name="message"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Message..."
-        />
-        <button type="button" onClick={handleFormSubmit}>
-          Submit
-        </button>
-      </form>
-    </div>
+      <section className='contactPage'>
+      <h2 className='section-heading'>Contact</h2>
+      <section className='contactForm'>
+        <form className="form">
+          <input
+            value={contactName}
+            name="contactName"
+            onChange={handleInputChange}
+            type="text"
+            placeholder="Name"
+          />
+          <input
+            value={email}
+            name="email"
+            onChange={handleInputChange}
+            type="email"
+            placeholder="Email"
+          />
+          <input
+            className='messageBox'
+            value={message}
+            name="message"
+            onChange={handleInputChange}
+            type="text"
+            placeholder="Message..."
+          />
+          <button type="button" onClick={handleFormSubmit}>
+            Submit
+          </button>
+        </form>
+      </section>
+    </section>
   );
 }
 
