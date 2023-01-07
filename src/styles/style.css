@@ -1,0 +1,388 @@
+/* Variables */
+:root {
+    --light-gray: rgb(186, 186, 194);
+    --dark: rgb(2, 6, 61);
+    --border: 2px solid #1512d8;
+    --border-radius: 13px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+/* Global selectors */
+*{
+    font-family: 'Jost', sans-serif;
+    font-variant: small-caps;
+}
+ 
+body{
+    width: 100%;
+    min-width: 500px;
+}
+
+/* Dark blue to white, top to bottom. */
+header{ 
+    background-image: linear-gradient(to bottom, rgb(2, 6, 61), rgb(2, 6, 61), rgb(2, 6, 61), rgba(253, 253, 253, 0));
+    width:100%;
+}
+
+h1 {
+    font-weight: 1000;
+    font-size: 72px;
+    font-style: oblique;
+    text-align: center;
+    width: 100%;
+  }
+  
+h2{
+    font-size: 44px;
+    font-weight: 600;
+    margin-left: 50px;
+    color: var(--dark);
+}
+
+  h3{
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--dark);
+  }
+
+/* Title display */
+.name-avatar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Round avatar with a border */
+.avatar{
+    height: 160px;
+    width: 160px;
+    border: var(--border);
+    border-radius: 80px;
+    margin: 40px 0px;
+}
+
+/* Navigation display and links */
+nav{
+    display: inline;
+    margin: 120px 0px 80px 0px;
+    display: flex; 
+    flex-flow: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+nav a{
+    font-size: 32px;
+    color: var(--dark);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Gradient dark blue to white, bottom to top */
+main{
+    background-image: linear-gradient(to top, rgb(2, 6, 61), rgb(2, 6, 61), rgba(255, 255, 255, 0),rgba(255, 255, 255, 0));
+    height: 100%;
+    width: 100%;
+}
+
+.section-heading{
+    color: var(--light-gray);
+    margin-bottom: 30px;
+}
+
+/* Creations Section - wraps three boxes (panes) containing project cards*/
+.creations{
+    display: flex; 
+    flex-flow:row wrap;
+    position: relative;
+    justify-content: center;
+    align-items:center;
+    flex: 2;
+}
+
+/* Container with focus project */
+.projects-highlight-pane{
+    display: flex;
+}
+
+/* The two panels on either side of the focus project will be vertically aligned. */
+.projects-pane{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+/* This moves one of the panes to the left of the focus pane so that focus project is centered. Media query will undo this at smaller display size*/
+.left-pane{
+    order: -1;
+}
+
+/* Project cards */
+.project{
+    /* border: var(--border); */
+    margin:40px;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.project img{
+    height: 250px;
+    padding: 25px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+
+}
+
+/* Enlarges the focus project card */
+.focus-project{
+    height: 400px;
+    width: 400px;
+}
+
+.focus-project img{
+    height: 350px;
+    width: 350px;
+}
+
+/* Overlay with project description */
+.project-title{
+    border: var(--border);
+    text-align: center;
+    border-radius: var(--border-radius);
+    position: absolute;
+    justify-content: center;
+    bottom: 30px;
+    padding: 5px;
+    background-color: var(--light-gray);
+}
+
+/* Hover creates highlight around project card.*/
+ .project:hover img{
+    box-shadow: inset 2px 2px 20px rgb(0, 0, 255), 2px 2px 20px rgb(0, 0, 255); 
+}
+
+/* Changes the color of the 'creations' heading to account for light background. */
+.dark{
+    color: var(--dark);
+}
+
+/* Bio section */
+.bio{
+    margin-top: 100px;
+    text-align: left;
+    color: var(--light-gray);
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 20px;
+}
+
+.bio .section-heading{
+    margin-left: 0px;
+}
+
+.bio p{
+    font-size: 22px;
+    width: 95%;
+    line-height: 1.2;
+    text-align: justify;
+}
+
+/* Contact Section */
+.contact-info{
+    color:var(--light-gray);
+    margin-top: 300px;
+    position: relative;
+    bottom: 100px;
+    margin-right: 40px;
+}
+
+.contact-info li{
+    display: block;
+    list-style-type:none;
+    font-size: 24px;
+    margin: 25px 50px;
+    justify-content: right;
+}
+
+.contact-link a{
+    text-decoration:none;
+    font-weight: 700;
+    color:rgb(242, 240, 255);
+}
+
+/* Text gradient animation effect template below originally found at: https://fossheim.io/writing/posts/css-text-gradient/ I modified the source code to create the animation effect of my name. */
+
+.gradient-text {
+    /* Fallback: Set a background color. */
+    background-color: var(--light-gray);
+    
+    /* Create the gradient. */
+        background-image: linear-gradient(
+            90deg,
+            var(--dark),
+            var(--dark),
+            var(--dark), 
+            var(--dark), 
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray),
+            var(--light-gray));
+    
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    
+    /* Animate the text when loading the element. */
+        /* This animates it on page load and when hovering out. */
+        animation: gradient-text-animation 2.5s ease-in backwards;
+    }
+    
+    @keyframes gradient-text-animation {
+        0% {
+            background-size: 650%;
+        }
+        80% {
+            background-size: 250%;
+        }
+        100% {
+            background-size: 100%;
+        }
+    }
+
+/* Adaptive media */
+
+        /* Tablets and smaller - Title name stacks vertically and section headings and contact info align centrally. Dark section of header expands to provide background for light Title*/
+
+        @media screen and (max-width: 1244px) {
+            /* Aligns project cards vertically with Focus project on top*/
+            
+            .creations{
+                flex-direction: column;
+            }
+            
+            .left-pane{
+            order: 0;
+            }
+
+            /* Stacks name and avatar*/
+            .name-avatar {
+            flex-wrap: wrap;
+            }
+            
+            /* Increases margin above first name */
+            .first-name{
+            margin-top: 60px;
+            }
+
+            /* Dark section of header expands to provide background for light Title*/ */
+            header{ 
+                background-image: linear-gradient(to bottom, rgb(2, 6, 61), rgb(2, 6, 61), rgb(2, 6, 61), rgba(253, 253, 253, 0));
+            }
+
+            /* Centrally aligns section headings and contents*/
+           .section-heading{
+                text-align: center;
+                margin-left: 0px;
+            }
+
+            .bio{
+                margin-left: 0;
+                /* margin-right: 20px;  */
+            }
+
+            .bio p{
+                margin-left: 40px;
+                padding-right: 30px; 
+            }
+
+            /* Centrally aligns contact information */
+            .contact-info{
+                text-align: center;
+                margin-left: 0px;
+            }
+
+        }
+        /* Shrink fonts for better viewing on smaller displays */
+        @media screen and (max-width: 600px) {
+           
+            h1{
+                font-size: 50px;
+            }
+
+            h2{
+                font-size: 30px;
+            }
+
+            h3{
+                font-size: 16px;
+            }
+
+            h4{
+                font-size: 10px;
+            }
+            
+            .bio{
+                margin-right: 80px;
+            }
+
+            .bio p{
+                font-size: 12px;
+            }
+
+            /* Shrinks Project cards*/
+            .project{
+                margin: 40 px;
+                height: 150px;
+                width: 150px;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+            
+            .project img{
+                height: 125px;
+                padding: 12.5px;
+                border: var(--border);
+                border-radius: var(--border-radius);
+            
+            }
+            .focus-project{
+                height: 200px;
+                width: 200px;
+            }
+            
+            .focus-project img{
+                height: 175px;
+                width: 175px;
+            }
+
+            .contact-info li{
+                font-size: 16px;
+            }
+        }

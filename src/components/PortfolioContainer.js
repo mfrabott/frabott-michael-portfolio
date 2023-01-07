@@ -1,38 +1,43 @@
 import React, { useState } from 'react';
+import Header from './Header';
+import Footer from './Footer';
 import NavTabs from './NavTabs';
-import Home from './pages/Home';
-import About from './pages/About';
-import Blog from './pages/Blog';
 import Contact from './pages/Contact';
+import About from './pages/About';
+import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume';
+import '../styles/style.css'
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('Home');
+  const [currentPage, setCurrentPage] = useState('About');
 
   // TODO: Add a comment describing the functionality of this method
   // conditionally render the componenet depending the current page
   const renderPage = () => {
-    if (currentPage === 'Home') {
-      return <Home />;
-    }
     if (currentPage === 'About') {
       return <About />;
     }
-    if (currentPage === 'Blog') {
-      return <Blog />;
+    if (currentPage === 'Portfolio') {
+      return <Portfolio />;
     }
-    return <Contact />;
+    if (currentPage === 'Contact') {
+      return <Contact />;
+    }
+    return <Resume />;
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
     <div>
-      {/* // TODO: Add a comment describing what we are passing as props */}
-      {/* current page variable and handlePageChange method */}
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      {/* // TODO: Add a comment explaining what is happening on the following line */}
-      {/* render the page */}
-      {renderPage()}
+      <header>
+        <Header />
+        <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      </header>
+      <main>
+        {renderPage()}
+        <Footer />
+      </main>
     </div>
   );
 }

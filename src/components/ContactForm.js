@@ -1,8 +1,6 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
-
-function Contact() {
+function Form() {
   // Here we set two state variables for firstName and lastName using `useState`
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
@@ -53,4 +51,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Form;
