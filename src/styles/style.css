@@ -1,8 +1,13 @@
 /* Variables */
 :root {
-    --light-gray: rgb(186, 186, 194);
-    --dark: rgb(2, 6, 61);
-    --border: 2px solid #1512d8;
+    --oxford: #02063D;
+    --chestnut: #A24936;
+    --marigold: #ECA400;
+    --powder: #FFFCF9;
+    --slate: #6E8894;
+    --light-gray: #83bca9;
+    --dark: #a24936;
+    --border: 2px solid #a24936;
     --border-radius: 13px;
 }
 @import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
@@ -20,30 +25,32 @@ body{
 
 /* Dark blue to white, top to bottom. */
 header{ 
-    background-image: linear-gradient(to bottom, rgb(2, 6, 61), rgb(2, 6, 61), rgb(2, 6, 61), rgba(253, 253, 253, 0));
+    background-color: var(--oxford);
     width:100%;
+    padding-top: 3rem;
 }
 
 h1 {
-    font-weight: 1000;
-    font-size: 72px;
-    font-style: oblique;
+    /* font-weight: 1000; */
+    font-size: 4rem;
+    /* font-style: oblique; */
     text-align: center;
-    width: 100%;
-  }
+    color: var(--chestnut);
+    /* width: 100%; */
+}
   
 h2{
-    font-size: 44px;
+    font-size: 2rem;
     font-weight: 600;
-    margin-left: 50px;
-    color: var(--dark);
+    /* margin-left: 50px; */
+    color: var(--chestnut);
 }
 
-  h3{
-    font-size: 26px;
+h3{
+    font-size: 1.3rem;
     font-weight: 600;
-    color: var(--dark);
-  }
+    color: var(--marigold);
+}
 
 /* Title display */
 .name-avatar{
@@ -52,42 +59,49 @@ h2{
     justify-content: center;
 }
 
+avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Round avatar with a border */
 .avatar{
-    height: 160px;
-    width: 160px;
+    height: 11rem;
+    width: 11rem;
     border: var(--border);
-    border-radius: 80px;
-    margin: 40px 0px;
+    border-radius: 5.5rem;
+    margin-top: 2.5rem;
 }
 
 /* Navigation display and links */
 nav{
-    display: inline;
-    margin: 120px 0px 80px 0px;
+    /* display: inline; */
+    margin: 5rem 0 1rem 0;
     display: flex; 
-    flex-flow: column;
-    justify-content: space-around;
+    /* flex-flow: column; */
+    justify-content:space-around;
     text-align: center;
+    background-color: var(--oxford) ;
 }
 
-nav a{
-    font-size: 32px;
-    color: var(--dark);
+.nav a{
+    font-size: 2rem;
+    color: var(--marigold);
     font-weight: 600;
     text-decoration: none;
-    padding: 10px;
+    padding: .75rem 9rem .25rem 9rem;
 }
 
 /* Gradient dark blue to white, bottom to top */
 main{
-    background-image: linear-gradient(to top, rgb(2, 6, 61), rgb(2, 6, 61), rgba(255, 255, 255, 0),rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to top, var(--oxford), var(--slate), var(--slate),var(--powder));
     height: 100%;
     width: 100%;
 }
 
 .section-heading{
-    color: var(--light-gray);
+    color: var(--slate);
     margin-bottom: 30px;
 }
 
@@ -123,9 +137,9 @@ main{
 /* Project cards */
 .project{
     /* border: var(--border); */
-    margin:40px;
-    height: 300px;
-    width: 300px;
+    margin: 3rem;
+    height: 20rem;
+    width: 20rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -134,8 +148,8 @@ main{
 }
 
 .project img{
-    height: 250px;
-    padding: 25px;
+    height: 18rem;
+    padding: 2rem;
     border: var(--border);
     border-radius: var(--border-radius);
 
@@ -143,13 +157,13 @@ main{
 
 /* Enlarges the focus project card */
 .focus-project{
-    height: 400px;
-    width: 400px;
+    height: 25rem;
+    width: 25rem;
 }
 
 .focus-project img{
-    height: 350px;
-    width: 350px;
+    height: 22rem;
+    width: 22rem;
 }
 
 /* Overlay with project description */
@@ -161,43 +175,43 @@ main{
     justify-content: center;
     bottom: 30px;
     padding: 5px;
-    background-color: var(--light-gray);
+    background-color: var(--chestnut);
 }
 
 /* Hover creates highlight around project card.*/
  .project:hover img{
-    box-shadow: inset 2px 2px 20px rgb(0, 0, 255), 2px 2px 20px rgb(0, 0, 255); 
+    box-shadow: inset 2px 2px 20px var(--oxford), 2px 2px 20px var(--oxford); 
 }
 
 /* Changes the color of the 'creations' heading to account for light background. */
 .dark{
-    color: var(--dark);
+    color: var(--oxford);
 }
 
 /* Bio section */
 .bio{
-    margin-top: 100px;
+    /* margin-top: 100px; */
     text-align: left;
-    color: var(--light-gray);
+    color: var(--oxford);
     align-items: center;
-    margin-left: 60px;
-    margin-right: 20px;
+    margin-left: 10rem;
+    margin-right: 10rem;
 }
 
-.bio .section-heading{
+/* .bio .section-heading{
     margin-left: 0px;
-}
+} */
 
 .bio p{
-    font-size: 22px;
-    width: 95%;
+    font-size: 1.5rem;
+    /* width: 95%; */
     line-height: 1.2;
     text-align: justify;
 }
 
 /* Contact Section */
 .contact-info{
-    color:var(--light-gray);
+    color:var(--powder);
     margin-top: 300px;
     position: relative;
     bottom: 100px;
@@ -207,7 +221,7 @@ main{
 .contact-info li{
     display: block;
     list-style-type:none;
-    font-size: 24px;
+    font-size: 1.75rem;
     margin: 25px 50px;
     justify-content: right;
 }
@@ -215,14 +229,14 @@ main{
 .contact-link a{
     text-decoration:none;
     font-weight: 700;
-    color:rgb(242, 240, 255);
+    color: var(--slate);
 }
 
 /* Text gradient animation effect template below originally found at: https://fossheim.io/writing/posts/css-text-gradient/ I modified the source code to create the animation effect of my name. */
 
 .gradient-text {
     /* Fallback: Set a background color. */
-    background-color: var(--light-gray);
+    background-color: var(--slate);
     
     /* Create the gradient. */
         background-image: linear-gradient(
@@ -300,7 +314,7 @@ main{
 
             /* Dark section of header expands to provide background for light Title*/ */
             header{ 
-                background-image: linear-gradient(to bottom, rgb(2, 6, 61), rgb(2, 6, 61), rgb(2, 6, 61), rgba(253, 253, 253, 0));
+                background-color: var(--oxford);
             }
 
             /* Centrally aligns section headings and contents*/
@@ -315,8 +329,8 @@ main{
             }
 
             .bio p{
-                margin-left: 40px;
-                padding-right: 30px; 
+                margin-left: 3rem;
+                padding-right: 3rem; 
             }
 
             /* Centrally aligns contact information */
@@ -329,7 +343,7 @@ main{
         /* Shrink fonts for better viewing on smaller displays */
         @media screen and (max-width: 600px) {
            
-            h1{
+            /* h1{
                 font-size: 50px;
             }
 
@@ -344,14 +358,15 @@ main{
             h4{
                 font-size: 10px;
             }
-            
+             */
             .bio{
-                margin-right: 80px;
+                margin-right: 2rem;
+                margin-left: 2rem;
             }
 
-            .bio p{
+            /* .bio p{
                 font-size: 12px;
-            }
+            } */
 
             /* Shrinks Project cards*/
             .project{
@@ -382,7 +397,7 @@ main{
                 width: 175px;
             }
 
-            .contact-info li{
+            /* .contact-info li{
                 font-size: 16px;
-            }
+            } */
         }
