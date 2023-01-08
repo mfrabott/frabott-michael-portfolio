@@ -1,30 +1,11 @@
 /* Variables */
-/* :root {
-    --primary: #273e47;
-    --tertiary: #A24936;
-    --secondary: #d5a021;
-    --quinary: #7fb285;
-    --quaternary: #6E8894;
-    --border: .2rem solid #a24936;
-    --border-radius: 1rem;
-} */
-
-/* :root {
-    --primary: #453F78;
-    --secondary: #6B0F1A;
-    --tertiary: #51BBFE;
-    --quinary: #9590a8;
-    --quaternary: #F9DC5C;
-    --border: .2rem solid #a24936;
-    --border-radius: 1rem;
-} */
-
 :root {
     --primary: #1F5673;
     --secondary: #9A031E;
     --tertiary: #330036;
     --quaternary: #CCCCCC;
     --quinary: #F2F2F2;
+    --teal: #62bec1;
     --border: .2rem solid #a24936;
     --border-radius: 1rem;
 }
@@ -35,13 +16,11 @@
 *{
     font-family: 'Playfair Display', sans-serif;
     /* font-variant: small-caps; */
-    
 }
  
 body{
     width: 100%;
-    min-width: 500px;
-    
+    /* min-width: 500px; */
 }
 
 /* primary blue to white, top to bottom. */
@@ -78,7 +57,6 @@ h3{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .avatarContainer {
@@ -104,7 +82,7 @@ nav{
     /* flex-flow: column; */
     justify-content:space-around;
     text-align: center;
-    background-color: var(--quinary) ;
+    /* background-color: var(--quinary) ; */
 }
 
 .nav a{
@@ -114,12 +92,10 @@ nav{
     font-weight: 1000;
     text-decoration: none;
     padding: .25rem 9rem .25rem 9rem;
-    background-color: var(--secondary);
+    /* background-color: var(--secondary); */
 }
 
-/* Gradient primary blue to white, bottom to top */
 main{
-    background-image: linear-gradient(to top, var(--quaternary), var(--quaternary), var(--quinary),var(--quinary));
     height:100%;
     width: 100%;
     overflow:hidden;
@@ -127,7 +103,7 @@ main{
 
 .background-body{
     background-image: linear-gradient(to top, var(--quaternary), var(--quaternary), var(--quinary),var(--quinary));
-    height:100vh;
+    height:100%;
     width: 100%;
     /* overflow:hidden; */
 }
@@ -219,7 +195,7 @@ main{
 }
 
 /* Changes the color of the 'creations' heading to account for light background. */
-.primary{
+.dark{
     color: var(--primary);
 }
 
@@ -326,8 +302,6 @@ main{
     border-radius: .2rem;
 }
 
-
-
 /* Adaptive media */
 
         /* Tablets and smaller - Title name stacks vertically and section headings and contact info align centrally. primary section of header expands to provide background for light Title*/
@@ -351,11 +325,6 @@ main{
     /* Increases margin above first name */
     .myName{
     /* margin-top:0; */
-    }
-
-    /* primary section of header expands to provide background for light Title*/ */
-    header{ 
-        /* background-color: var(--primary); */
     }
 
     /* Centrally aligns section headings and contents*/
