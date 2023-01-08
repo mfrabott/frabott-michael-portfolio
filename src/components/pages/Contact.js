@@ -46,13 +46,13 @@ function Contact() {
             type="email"
             placeholder="Email"
           />
-          <input
+          <textarea
             className='messageBox'
             value={message}
             name="message"
             onChange={handleInputChange}
-            type="text"
-            placeholder="Message..."
+            // type="textarea"
+            placeholder="Send me a message!"
           />
           <button type="button" onClick={handleFormSubmit}>
             Submit

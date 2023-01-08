@@ -4,11 +4,11 @@ import avatar from '../../assets/images/frabott-wave-2.gif'
 export default function About() {
   return (
     <section className="bio">
-      <h2 className='section-heading'>About Me</h2>
       
       <div className='avatarContainer'>
         <img className="avatar" src={avatar} height={150} width={150} alt="Animated graphic of person with glasses in a white hoodie waving."></img>
       </div>
+      <h2 className='section-heading'>About Me</h2>
       
       <p>After enjoying the past ten years working as a paralegal, I recently decided to embark on a new challenge in the world of web development. While my responsibilities and skillset in that role continued to expand, I realized that I wanted to spend more time focusing on the aspects of my job that I enjoyed and excelled at the most - working through technical and logic questions and expanding on opportunities to be more creative.</p>
       

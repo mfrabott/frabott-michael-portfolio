@@ -17,17 +17,20 @@
     font-family: 'Playfair Display', sans-serif;
     /* font-variant: small-caps; */
 }
- 
-body{
-    width: 100%;
-    /* min-width: 500px; */
-}
 
 /* primary blue to white, top to bottom. */
 header{ 
     background-image: linear-gradient(to bottom, var(--quaternary), var(--quaternary), var(--quinary),var(--quinary));
     width:100%;
-    padding-top: 3rem;
+    padding-top: 1.5rem;
+    position:fixed;
+    height: 13rem;
+    z-index: 2 !important;
+}
+ 
+body{
+    width: 100%;
+    /* min-width: 500px; */
 }
 
 .myName {
@@ -76,13 +79,18 @@ h3{
 
 /* Navigation display and links */
 nav{
-    /* display: inline; */
-    margin-top: 1.25rem;
     display: flex; 
-    /* flex-flow: column; */
     justify-content:space-around;
     text-align: center;
+    /* display: inline; */
+    /* margin-top: 1rem; */
+    /* flex-flow: column; */
     /* background-color: var(--quinary) ; */
+}
+
+nav.container-fluid{
+    /* margin-left: 5rem; */
+    /* margin-right: 15rem; */
 }
 
 .nav a{
@@ -91,27 +99,44 @@ nav{
     color: var(--secondary);
     font-weight: 1000;
     text-decoration: none;
-    padding: .25rem 9rem .25rem 9rem;
+    padding: .25rem 4rem .25rem 4rem;
     /* background-color: var(--secondary); */
 }
 
-main{
-    height:100%;
-    width: 100%;
-    overflow:hidden;
+.active-tab {
+ background-color: rgba(255, 255, 255, 0) !important;
+ color: var(--primary) !important;
 }
 
-.background-body{
-    background-image: linear-gradient(to top, var(--quaternary), var(--quaternary), var(--quinary),var(--quinary));
-    height:100%;
-    width: 100%;
+.nav-link:hover{
+    color: var(--tertiary) !important;
+}
+
+main{
+    /* height:100%; */
+    min-height: 100%;
+    /* width: 100%; */
+    /* max-height: 100%; */
+    /* overflow-y: hidden; */
     /* overflow:hidden; */
+    position: relative;
+    top: 13rem;
+}
+
+html,
+.background-body{
+    background-color: var(--quinary);
+    /* background-image: linear-gradient(to top, var(--quaternary), var(--quaternary), var(--quinary),var(--quinary), var(--quinary)); */
+    min-height: 100%;
+    height: 100%;
+    /* overflow-y: hidden; */
 }
 
 .section-heading{
-    color: var(--secondary);
+    color: var(--primary);
+    font-weight: 600;
     margin-bottom: 1rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
     font-size: 2.75rem;
     text-align: center;
 }
@@ -226,48 +251,75 @@ main{
     text-align: left;
     color: var(--tertiary);
     align-items: center;
-    margin-left: 14rem;
+    margin: 0rem 14rem 12rem 14rem;
     margin-right: 14rem;
 }
 
 .resume p{
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.2;
-    text-align: justify;
-    padding-top: .25rem
+    /* text-align: justify; */
+    text-align: center;
+    padding-top: 1.5rem
 }
 
+.pdf {
+    color: var(--secondary);
+}
+
+.footer{
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+
+    /* align-items: center; */
+}
 
 /* Contact Section */
 .contact-info{
+    font-variant: small-caps;
     color:var(--primary);
-    margin-top: 4rem;
+    /* text-transform: lowercase; */
+    display: flex;
+    margin-top: 6rem;
     font-weight: 800;
-    text-transform: lowercase;
-    /* font-variant: small-caps; */
-    /* position: relative; */
-    /* bottom: 6rem; */
-    margin-left: 14rem;
-    margin-right: 14rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 4rem;
+    z-index: 2;
 }
 
-.contact-info ul {
-    padding: 0;
+.contact-info p{
+    /* display: inline; */
+    /* align-content: center; */
+    font-size: 1.5rem;
+    white-space: nowrap;
+    /* margin-bottom: .5rem; */
 }
 
-.contact-info li{
-    display: block;
-    list-style-type:none;
-    font-size: 1.75rem;
-    margin-bottom: .5rem;
-    justify-content: right;
+.contact-link a:hover{
+    color: var(--tertiary) !important;
+}
+
+.contact-link-img:hover{
+    /* box-shadow: 1px 1px 10px var(--primary) !important; */
+    height: 2.65rem;
 }
 
 .contact-link a{
     text-decoration:none;
     font-weight: 700;
     color: var(--secondary);
+}
+
+.contact-link-img{
+    height: 2.5rem;
 }
 
 .contactForm {
@@ -292,10 +344,13 @@ main{
 
 .messageBox {
     height: 15rem;
+    margin: .5rem;
+    width: 25rem;
+    border-radius: .2rem;
 }
 
 .form button {
-    background-color: var(--primary);
+    background-color: var(--tertiary);
     color: var(--quinary);
     margin: .5rem;
     width: 25rem;
@@ -397,4 +452,43 @@ main{
         margin-left: 2rem;
         margin-right: 2rem;
     }
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: var(--quaternary);
+    position: relative;
+}
+  
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav p {
+    color: var(--primary);
+    /* padding: .5rem; */
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+}
+
+.topnav a.icon {
+    background: var(--secondary);
+    color: var(--teal);
+    display: block;
+    /* font-size: 1.5rem; */
+    padding: 1rem 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background-color: var(--teal);
+    color: var(--secondary);
+}
+
+.active {
+    /* background-color: #04AA6D; */
+    /* color: white; */
 }

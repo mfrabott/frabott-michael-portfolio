@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import TopNav from './TopNav';
 import NavTabs from './NavTabs';
 import Contact from './pages/Contact';
 import About from './pages/About';
@@ -8,6 +9,7 @@ import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/style.css'
+// import TopNav from './TopNav';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
@@ -32,8 +34,9 @@ export default function PortfolioContainer() {
   return (
     <div className='background-body'>
       <header>
-        <Header />
+        {/* <TopNav /> */}
         <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+        <Header />
       </header>
       <main>
         {renderPage()}
