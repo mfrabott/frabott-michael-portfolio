@@ -3,9 +3,10 @@
     --primary: #1F5673;
     --secondary: #9A031E;
     --tertiary: #330036;
+    /* --tertiary: #8E7C93; */
     --quaternary: #CCCCCC;
     --quinary: #F2F2F2;
-    --teal: #62bec1;
+    --teal: #8E7C93;
     --border: .2rem solid #a24936;
     --border-radius: 1rem;
 }
@@ -133,7 +134,8 @@ html,
 }
 
 .section-heading{
-    color: var(--primary);
+    color: var(--tertiary);
+    /* text-decoration: underline; */
     font-weight: 600;
     margin-bottom: 1rem;
     padding-top: 1rem;
@@ -151,6 +153,9 @@ html,
     flex: 2;
 }
 
+.projects {
+    padding-bottom: 5rem;
+}
 /* Container with focus project */
 .projects-highlight-pane{
     display: flex;
@@ -159,7 +164,7 @@ html,
 /* The two panels on either side of the focus project will be vertically aligned. */
 .projects-pane{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -170,23 +175,41 @@ html,
     order: -1;
 }
 
+/* --------------------------------------------------------------------------------- */
+
+
+.project-image{
+    height: 20rem;
+    margin: 2rem 0;
+    /* width: 40rem; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: row; */
+}
+
+/* --------------------------------------------------------------------------------- */
+
 /* Project cards */
+
 .project{
     /* border: var(--border); */
-    margin: 3rem;
-    height: 20rem;
-    width: 20rem;
+    /* margin: 1rem; */
+    /* height: 20rem; */
+    /* width: 20rem; */
+    padding: 6rem;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    align-content: center;
     position: relative;
 }
 
 .project img{
-    height: 18rem;
-    padding: 2rem;
-    border: var(--border);
+    height: 23rem;
+    width: 35rem;
+    padding: 2rem 0;
+    margin: 2rem 0;
+    /* border: var(--border); */
     border-radius: var(--border-radius);
 
 }
@@ -216,7 +239,7 @@ html,
 
 /* Hover creates highlight around project card.*/
  .project:hover img{
-    box-shadow: inset 2px 2px 20px var(--primary), 2px 2px 20px var(--primary); 
+    box-shadow: inset 1px 1px 10px var(--secondary), 1px 1px 10px var(--secondary); 
 }
 
 /* Changes the color of the 'creations' heading to account for light background. */
@@ -228,7 +251,7 @@ html,
 .bio{
     /* margin-top: 100px; */
     text-align: left;
-    color: var(--tertiary);
+    color: var(--primary);
     align-items: center;
     margin-left: 14rem;
     margin-right: 14rem;
@@ -249,10 +272,14 @@ html,
 .resume{
     /* margin-top: 100px; */
     text-align: left;
-    color: var(--tertiary);
+    color: var(--primary);
     align-items: center;
     margin: 0rem 14rem 12rem 14rem;
     margin-right: 14rem;
+}
+
+.topic{
+    color: var(--tertiary);
 }
 
 .resume p{
@@ -269,8 +296,10 @@ html,
 }
 
 .footer{
+    background-color: var(--quinary);
+    width: 100%;
     position: fixed;
-    bottom: 1rem;
+    bottom: 0rem;
     left: 50%;
     transform: translate(-50%);
     display: block;
@@ -284,7 +313,7 @@ html,
     color:var(--primary);
     /* text-transform: lowercase; */
     display: flex;
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
     font-weight: 800;
     margin-left: 2rem;
     margin-right: 2rem;
