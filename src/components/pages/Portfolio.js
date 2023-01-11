@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectList from '../Project'
+import ProjectCard from '../ProjectCard'
 import myProjects from '../projectsAPI'
 
 export default function Portfolio() {
@@ -15,7 +15,7 @@ export default function Portfolio() {
             {project.title}
           </li> */}
         {/* ))} */}
-          <p><ProjectList ProjectList={myProjects} /></p>
+          <ProjectCard ProjectList={myProjects} />
 
       </div>
     </div>
