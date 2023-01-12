@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/frabott-michael-portfolio/static/css/main.696cd251.css",
+    "main.js": "/frabott-michael-portfolio/static/js/main.a31996fe.js",
+    "static/media/Work-Day-Scheduler.gif": "/frabott-michael-portfolio/static/media/Work-Day-Scheduler.f635b982f86b3605daaa.gif",
+    "static/media/frabott-wave-2.gif": "/frabott-michael-portfolio/static/media/frabott-wave-2.44739b93ea3f0462a7ea.gif",
+    "static/media/Code-Quiz.gif": "/frabott-michael-portfolio/static/media/Code-Quiz.0d543f7a3415145f3baa.gif",
+    "static/media/screencapture-portfolio-mobile.png": "/frabott-michael-portfolio/static/media/screencapture-portfolio-mobile.5a816722076d5de6c30e.png",
+    "static/media/screencapture-portfolio-desktop.png": "/frabott-michael-portfolio/static/media/screencapture-portfolio-desktop.8934e3797b2893d5a321.png",
+    "static/media/moreThanAGame.png": "/frabott-michael-portfolio/static/media/moreThanAGame.a85f24c8b27e28415b2a.png",
+    "static/media/moreThanAGame2.png": "/frabott-michael-portfolio/static/media/moreThanAGame2.8af74b21aba543d18c15.png",
+    "static/media/moreThanAGame3.png": "/frabott-michael-portfolio/static/media/moreThanAGame3.650ec4c4864b06feece4.png",
+    "static/media/github.PNG": "/frabott-michael-portfolio/static/media/github.abb5df5cb6033db6a886.PNG",
+    "static/media/Frabott-Michael-Resume-2023.01.02.pdf": "/frabott-michael-portfolio/static/media/Frabott-Michael-Resume-2023.01.02.a4b65e0367ed6f3420c4.pdf",
+    "static/media/weather-dashboard.png": "/frabott-michael-portfolio/static/media/weather-dashboard.ca8ede810a7e93c16968.png",
+    "static/media/graphical-rest.png": "/frabott-michael-portfolio/static/media/graphical-rest.cf7dd016de0ab48df674.png",
+    "static/media/JATE.png": "/frabott-michael-portfolio/static/media/JATE.ed6d416c8b06b3ac43a3.png",
+    "static/media/note-taker.png": "/frabott-michael-portfolio/static/media/note-taker.8a1bf95589965e0b48b6.png",
+    "index.html": "/frabott-michael-portfolio/index.html",
+    "main.696cd251.css.map": "/frabott-michael-portfolio/static/css/main.696cd251.css.map",
+    "main.a31996fe.js.map": "/frabott-michael-portfolio/static/js/main.a31996fe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.696cd251.css",
+    "static/js/main.a31996fe.js"
+  ]
+}
