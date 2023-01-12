@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/frabott-michael-portfolio/static/css/main.696cd251.css",
-    "main.js": "/frabott-michael-portfolio/static/js/main.d0fae0b8.js",
+    "main.js": "/frabott-michael-portfolio/static/js/main.bfd102cf.js",
     "static/media/Work-Day-Scheduler.gif": "/frabott-michael-portfolio/static/media/Work-Day-Scheduler.f635b982f86b3605daaa.gif",
     "static/media/frabott-wave-2.gif": "/frabott-michael-portfolio/static/media/frabott-wave-2.44739b93ea3f0462a7ea.gif",
     "static/media/Code-Quiz.gif": "/frabott-michael-portfolio/static/media/Code-Quiz.0d543f7a3415145f3baa.gif",
@@ -16,12 +16,13 @@
     "static/media/graphical-rest.png": "/frabott-michael-portfolio/static/media/graphical-rest.cf7dd016de0ab48df674.png",
     "static/media/JATE.png": "/frabott-michael-portfolio/static/media/JATE.ed6d416c8b06b3ac43a3.png",
     "static/media/note-taker.png": "/frabott-michael-portfolio/static/media/note-taker.8a1bf95589965e0b48b6.png",
+    "static/media/phoneicon.png": "/frabott-michael-portfolio/static/media/phoneicon.3ded8f34f1f80b378ba8.png",
     "index.html": "/frabott-michael-portfolio/index.html",
     "main.696cd251.css.map": "/frabott-michael-portfolio/static/css/main.696cd251.css.map",
-    "main.d0fae0b8.js.map": "/frabott-michael-portfolio/static/js/main.d0fae0b8.js.map"
+    "main.bfd102cf.js.map": "/frabott-michael-portfolio/static/js/main.bfd102cf.js.map"
   },
   "entrypoints": [
     "static/css/main.696cd251.css",
-    "static/js/main.d0fae0b8.js"
+    "static/js/main.bfd102cf.js"
   ]
 }
