@@ -1,7 +1,8 @@
 {
-  "name": "frabott-portfolio",
+  "name": "frabott-michael-portfolio",
   "version": "1.0",
   "private": true,
+  "homepage": "https://mfrabott.github.io/frabott-michael-portfolio",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@testing-library/jest-dom": "^5.16.4",
