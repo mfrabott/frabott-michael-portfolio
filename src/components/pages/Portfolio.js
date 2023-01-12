@@ -9,12 +9,7 @@ export default function Portfolio() {
       <div className="container">
       
       <div className="list-group">
-        {/* Here we use the map method to iterate through each user and return a new array of list items for each user */}
-        {/* {myProjects.map((project) => (
-          <li className="list-group-item" key={project.id}>
-            {project.title}
-          </li> */}
-        {/* ))} */}
+
           <ProjectCard ProjectList={myProjects} />
 
       </div>

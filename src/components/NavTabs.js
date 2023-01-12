@@ -2,9 +2,9 @@ import React from 'react';
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <nav className='container-fluid'>
-      <ul className=" row nav nav-pills">
-        <li className="col-lg-3  col-md-2 nav-item text-nowrap">
+    <nav className='container'>
+      <ul className=" nav nav-pills">
+        <li className="nav-item text-nowrap">
           <a
             href="#about"
             onClick={() => handlePageChange('About')}
@@ -13,7 +13,7 @@ function NavTabs({ currentPage, handlePageChange }) {
             About Me
           </a>
         </li>
-        <li className="col-lg-3 col-md-2  nav-item">
+        <li className=" nav-item">
           <a
             href="#portfolio"
             onClick={() => handlePageChange('Portfolio')}
@@ -22,7 +22,7 @@ function NavTabs({ currentPage, handlePageChange }) {
             Portfolio
           </a>
         </li>
-        <li className="col-lg-3 col-md-2 nav-item">
+        <li className="nav-item">
           <a
             href="#contact"
             onClick={() => handlePageChange('Contact')}
@@ -31,7 +31,7 @@ function NavTabs({ currentPage, handlePageChange }) {
             Contact
           </a>
         </li>
-        <li className="col-lg-3  col-md-2 nav-item">
+        <li className="nav-item">
           <a
             href="#resume"
             onClick={() => handlePageChange('Resume')}

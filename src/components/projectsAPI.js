@@ -12,7 +12,7 @@ const myProjects = [
         id: 2,
         title: 'More Than A Game',
         github: 'https://github.com/mfrabott/more-than-a-game',
-        deployed: 'https://mfrabott.github.io/more-than-a-game',
+        deployed: 'https://mfrabott.github.io/More-Than-A-Game/',
         image_file: 'moreThanAGame2.png',
         description: '',
         tools:'',
@@ -53,14 +53,14 @@ const myProjects = [
         description: '',
         tools:'',
     },
-    {
-        id: 7,
-        title: 'Note Taker',
-        github: 'https://github.com/mfrabott/note-taker-express-server',
-        deployed: 'https://shielded-fortress-69743.herokuapp.com',
-        image_file: 'note-taker.png',
-        description: '',
-        tools:'',
-    },
+    // {
+    //     id: 7,
+    //     title: 'Note Taker',
+    //     github: 'https://github.com/mfrabott/note-taker-express-server',
+    //     deployed: 'https://shielded-fortress-69743.herokuapp.com',
+    //     image_file: 'note-taker.png',
+    //     description: '',
+    //     tools:'',
+    // },
 ]
 export default myProjects;

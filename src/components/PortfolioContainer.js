@@ -9,10 +9,10 @@ import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/style.css'
-// import TopNav from './TopNav';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
+
 
   // TODO: Add a comment describing the functionality of this method
   // conditionally render the componenet depending the current page
@@ -34,7 +34,7 @@ export default function PortfolioContainer() {
   return (
     <div className='background-body'>
       <header>
-        {/* <TopNav /> */}
+        <TopNav handlePageChange={handlePageChange} />
         <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
         <Header />
       </header>

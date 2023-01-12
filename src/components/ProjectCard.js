@@ -1,4 +1,5 @@
 import React from 'react';
+import {v4 as uuidv4} from 'uuid';
 
 function importAll(r) {
     let images = {};
@@ -16,13 +17,14 @@ function importAll(r) {
 // This prevents us from having to type `props.users` each time we want to refer to the users object
 export default function ProjectCard({ProjectList}) {
   return (
-    <div className="container projects-container creations">
+    
+    <div className="container projects-container creations ">
 
-      <div className="row">
+      <div className="row justify-content-center">
             {ProjectList.map((project) => (
-              <div className= "col-6">
+              <div className= "col-md-10 col-lg-6">
                 <div className='card-body'>
-                  <div className=" project-image project " key={project.id}>
+                  <div className=" project-image project" key={uuidv4()}>
                   <a href={project.deployed} target='_blank'><img className=" project-image " src={images[`${project.image_file}`]}></img></a>
                 <div className='card-text'>
                   <h3>{project.title}</h3>
