@@ -1,5 +1,5 @@
 import React from 'react';
-// import headerImage from './images/frabott-wave-2.gif'
+import headerImage from '../assets/images/frabott-wave-2.gif'
 
 
 export default function Header() {

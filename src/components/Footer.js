@@ -7,7 +7,7 @@ import emailLogo from '../assets/images/emailimg.png'
 
 export default function Header() {
   return (
-    <div className='footer'>
+    <div className='footer container'>
       <section className="contact-info" id="contact-info">
           <p className='contact-spelled-out'><span className="contact-link"><a href="mailto: michael.frabott@gmail.com">Write</a></span> | michael.frabott@gmail.com</p>
           <a className='emailLogo' href="mailto: michael.frabott@gmail.com" target="_blank" ><img src={emailLogo} className="contact-link contact-link-img"></img></a>

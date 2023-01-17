@@ -25,7 +25,7 @@ export default function TopNav( {handlePageChange} ) {
         <div id="myLinks">
             <a href="#about" onClick={() => clickLink('About')}>About</a>
             <a href="#portfolio" 
-            onClick={() => clickLink('Portfolio')}>Portfolio</a>
+            onClick={() => clickLink('Portfolio')}>Projects</a>
             <a href="#contact" onClick={() => clickLink('Contact')}>Contact</a>
             <a href="#resume" onClick={() => clickLink('Resume')} >Resume</a>
         </div>
