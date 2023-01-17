@@ -1,6 +1,6 @@
 /* Variables */
 :root {
-    --primary: #1F5673;
+    --primary: hsl(201, 58%, 29%);
     --secondary: #9A031E;
     --tertiary: #330036;
     /* --tertiary: #8E7C93; */
@@ -11,12 +11,51 @@
     --border-radius: .25rem;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@font-face {
+    font-family: 'WoodenNickelNF';
+    font-weight: normal; 
+    src: local('WoodenNickelNF'), url('../fonts/WoodenNickelNF.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DeLatto';
+    font-weight: normal;
+    src: local('DeLatto'), url('../fonts/DeLatto.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Vonder';
+    font-weight: normal;
+    src: local('Vonder'), url('../fonts/VonderClean.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'StonyIsland';
+    font-weight: normal;
+    src: local('StonyIsland'), url('../fonts/StonyIslandNF.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CottageSans';
+    font-weight: normal;
+    src: local('CottageSans'), url('../fonts/CottageSans.ttf') format('truetype');
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt:wght@400&display=swap');
+
 
 /* Global selectors */
 *{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Abhaya Libre', serif;
     /* font-variant: small-caps; */
+}
+
+.container{
+    margin: 0!
 }
 
 .topnav {
@@ -35,69 +74,45 @@ header{
  
 body{
     width: 100%;
-    /* min-width: 500px; */
 }
 
 .myName {
-    font-size: 5rem;
+    font-size: 4.5rem;
+    font-family: 'DeLatto';
     color: var(--primary);
-    font-weight: 500;
-    font-variant: small-caps;
+    /* font-family: 'Rock Salt', 'Abhaya Libre', serif; */
+    font-weight: 400;
+    letter-spacing: .2rem;
+    /* font-variant: small-caps; */
+    /* margin-top: 1.5rem; */
+    /* padding-top: 2rem; */
 }
 
 h2{
     font-size: 4rem;
     font-weight: 600;
     color: var(--secondary);
-    font-variant: small-caps;
-    /* margin-left: 50px; */
+    /* font-variant: small-caps; */
 }
-
-
 
 h3{
     font-size: 3.3rem;
     font-weight: 600;
     color: var(--tertiary);
-    font-variant: small-caps;
-}
-
-.creations h3{
-    font-size: 2.3rem;
-    line-height: 1.2rem;
-    font-weight: 700;
-    color: var(--tertiary);
-    font-variant: small-caps;
-}
-
-.creations h5{
-    display: inline;
-    font-size: 1.1rem;
-    line-height: 1rem;
-    font-weight: 700;
-    color: var(--secondary);
-    font-variant: small-caps;
-}
-
-.creations a{
-    display: inline;
-    font-size: 1.1rem;
-    line-height: 1rem;
-    font-weight: 700;
-    color: var(--tertiary);
-    font-variant: small-caps;
+    /* font-variant: small-caps; */
 }
 
 .creations a:hover{
     color: var(--tertiary);
 }
+
 /* Title display */
 .myNameContainer{
-    /* position: fixed; */
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 2rem;
+    padding-top: 3rem;
 }
 
 .avatarContainer {
@@ -120,30 +135,21 @@ nav{
     display: flex; 
     justify-content:space-around;
     text-align: center;
-    /* display: inline; */
-    /* margin-top: 1rem; */
-    /* flex-flow: column; */
-    /* background-color: var(--quinary) ; */
-}
-
-nav.container{
-    /* margin-left: 0rem; */
-    /* margin-right: 0rem; */
 }
 
 .nav a{
-    font-variant: small-caps;
+    font-family: 'CottageSans', serif;
+    /* font-variant: small-caps; */
     font-size: 1.75rem;
     color: var(--secondary);
-    font-weight: 1000;
+    font-weight: 500;
     text-decoration: none;
     padding: .25rem 4rem .25rem 4rem;
-    /* background-color: var(--secondary); */
 }
 
 .active-tab {
- background-color: rgba(255, 255, 255, 0) !important;
- color: var(--primary) !important;
+    background-color: rgba(255, 255, 255, 0) !important;
+    color: var(--primary) !important;
 }
 
 .nav-link:hover{
@@ -151,12 +157,8 @@ nav.container{
 }
 
 main{
-    /* height:100%; */
+    
     min-height: 100%;
-    /* width: 100%; */
-    /* max-height: 100%; */
-    /* overflow-y: hidden; */
-    /* overflow:hidden; */
     position: relative;
     top: 12rem;
 }
@@ -164,36 +166,21 @@ main{
 html,
 .background-body{
     background-color: var(--quinary);
-    /* background-image: linear-gradient(to top, var(--quaternary), var(--quaternary), var(--quinary),var(--quinary), var(--quinary)); */
     min-height: 100%;
     height: 100%;
-    /* overflow-y: hidden; */
 }
 
 .section-heading{
+    font-family: 'CottageSans';
     color: var(--tertiary);
     /* text-decoration: underline; */
-    font-weight: 600;
+    font-weight: 300;
     margin-bottom: 1rem;
     /* margin-top:1rem; */
+    /* font-family: 'Rock Salt','Abhaya Libre', serif; */
     padding-top: 1rem;
     font-size: 2.75rem;
     text-align: center;
-}
-
-/* Creations Section - wraps three boxes (panes) containing project cards*/
-.card-text{
-    text-align: center;
-}
-
-.card-text a{
-    text-decoration: none;
-    color: var(--secondary)
-}
-
-.card-text:hover h5{
-    text-decoration: none;
-    color: var(--tertiary)
 }
 
 .creations{
@@ -207,55 +194,10 @@ html,
 }
 
 .projects {
-    padding-bottom: 5rem;
-}
-/* Container with focus project */
-.projects-highlight-pane{
-    display: flex;
-}
-
-/* The two panels on either side of the focus project will be vertically aligned. */
-.projects-pane{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-
-/* This moves one of the panes to the left of the focus pane so that focus project is centered. Media query will undo this at smaller display size*/
-.left-pane{
-    order: -1;
-}
-
-/* --------------------------------------------------------------------------------- */
-
-.card {
-    background-color: #1F5673;
-}
-
-.project-image{
-    /* height: 20rem; */
-    /* width: 20rem; */
-    /* margin: 2rem 0; */
-    /* width: 40rem; */
-    /* flex-wrap: wrap; */
-    /* flex-direction: row; */
-}
-
-/* --------------------------------------------------------------------------------- */
-
-/* Project cards */
-.projects {
-    /* padding-top: 1rem; */
     padding-bottom: 3rem;
 }
 
 .project{
-    /* border: var(--border); */
-    /* margin: 1rem; */
-    /* height: 20rem; */
-    /* width: 20rem; */
     padding-bottom: 3rem;
     display: flex;
     flex-flow: row wrap;
@@ -270,49 +212,55 @@ html,
     width: 30rem;
     padding: 0rem 0;
     margin-bottom: .75rem;
-    /* border: var(--border); */
     border-radius: var(--border-radius);
-
+    
 }
 
-/* Enlarges the focus project card */
-.focus-project{
-    height: 25rem;
-    width: 25rem;
-}
-
-.focus-project img{
-    height: 22rem;
-    width: 22rem;
-}
-
-/* Overlay with project description */
-.project-title{
-    border: var(--border);
-    text-align: center;
-    border-radius: var(--border-radius);
-    position: absolute;
-    justify-content: center;
-    bottom: 30px;
-    padding: 5px;
-    background-color: var(--secondary);
-}
-
-/* Hover creates highlight around project card.*/
- .project:hover img{
+.project:hover img{
     box-shadow: inset 1px 1px 10px var(--tertiary), 1px 1px 10px var(--tertiary); 
-    /* height: 23rem; */
-    /* width: 35rem; */
 }
 
-/* Changes the color of the 'creations' heading to account for light background. */
-.dark{
-    color: var(--primary);
+.card-text{
+    text-align: center;
+}
+
+.creations h3{
+    font-family: 'CottageSans';
+    font-size: 2.3rem;
+    line-height: 1.2rem;
+    font-weight: 400;
+    color: var(--tertiary);
+    /* font-variant: small-caps; */
+}
+
+.creations h5{
+    font-family: 'CottageSans';
+    display: inline;
+    font-size: 1.1rem;
+    line-height: 1rem;
+    font-weight: 400;
+    color: var(--secondary);
+    /* font-variant: small-caps; */
+}
+
+.creations a{
+    font-family: 'CottageSans';
+    display: inline;
+    font-size: 1.5rem;
+    line-height: 1rem;
+    font-weight: 500;
+    color: var(--tertiary);
+    /* font-variant: small-caps; */
+}
+
+
+.card-text a{
+    text-decoration: none;
+    color: var(--secondary)
 }
 
 /* Bio section */
 .bio{
-    /* margin-top: 100px; */
     text-align: left;
     color: var(--primary);
     align-items: center;
@@ -321,20 +269,16 @@ html,
     padding-bottom: 5rem;
 }
 
-/* .bio .section-heading{
-    margin-left: 0px;
-} */
-
 .bio p{
+    /* font-family: 'CottageSans'; */
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 1.2;
     text-align: justify;
     padding-top: .25rem
 }
 
 .resume{
-    /* margin-top: 100px; */
     text-align: left;
     color: var(--primary);
     align-items: center;
@@ -348,9 +292,8 @@ html,
 
 .resume p{
     font-size: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.2;
-    /* text-align: justify; */
     text-align: center;
     padding-top: 1.5rem
 }
@@ -372,65 +315,14 @@ html,
     left: 50%;
     transform: translate(-50%);
     display: block;
-    /* border-top: 1px solid var(--tertiary); */
-    /* align-items: center; */
 }
 
 /* Contact Section */
-.contact-info{
-    font-variant: small-caps;
-    color:var(--primary);
-    /* text-transform: lowercase; */
-    display: flex;
-    /* margin-top: 6rem; */
-    font-weight: 800;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 4rem;
-    z-index: 2;
-}
-
-.contact-info p{
-    /* display: inline; */
-    /* align-content: center; */
-    font-size: 1.5rem;
-    white-space: nowrap;
-    /* margin-bottom: .5rem; */
-}
-
-.contact-link a:hover{
-    color: var(--tertiary) !important;
-}
-
-.contact-link-img:hover{
-    /* box-shadow: 1px 1px 10px var(--primary) !important; */
-    height: 2.65rem;
-}
-
-.contact-link a{
-    text-decoration:none;
-    font-weight: 700;
-    color: var(--secondary);
-}
-
-.contact-link-img{
-    height: 2.5rem;
-}
 
 .contactPage{
     padding-bottom: 5rem;
 }
 
-.emailLogo{
-    display:none
-}
-
-.phoneLogo{
-    display:none
-}
 
 .contactForm {
     display: flex;
@@ -442,8 +334,8 @@ html,
 .contactForm textarea,
 .contactForm input{
     color: var(--tertiary);
-    font-weight: 700;
-    letter-spacing:.05rem;
+    font-weight: 500;
+    /* letter-spacing:.05rem; */
 }
 
 .sentMessage {
@@ -481,49 +373,69 @@ html,
     border-radius: .2rem;
 }
 
+.contact-info{
+    /* font-variant: small-caps; */
+    color:var(--primary);
+    display: flex;
+    font-weight: 500;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 4rem;
+    z-index: 2;
+}
+
+.contact-info p{
+    font-size: 1.5rem;
+    white-space: nowrap;
+    font-family: 'CottageSans';
+}
+
+.contact-link a:hover{
+    color: var(--tertiary) !important;
+}
+
+.contact-link-img:hover{
+    height: 2.65rem;
+}
+
+.contact-link a{
+    text-decoration:none;
+    font-weight: 500;
+    color: var(--secondary);
+    font-family: 'CottageSans';
+}
+
+.contact-link-img{
+    height: 2.5rem;
+}
+
+.emailLogo{
+    display:none
+}
+
+.phoneLogo{
+    display:none
+}
+
+
 /* Adaptive media */
 
-        /* Tablets and smaller - Title name stacks vertically and section headings and contact info align centrally. primary section of header expands to provide background for light Title*/
-
 @media screen and (max-width: 1244px) {
-    /* Aligns project cards vertically with Focus project on top*/
     
-    .creations{
-        flex-direction: column;
-    }
-    
-    .left-pane{
-    order: 0;
-    }
-
-    /* Stacks name and avatar*/
-    .myNameContainer {
-    flex-wrap: wrap;
-    }
-    
-    /* Increases margin above first name */
-    .myName{
-    /* margin-top:0; */
-    }
-
-    /* Centrally aligns section headings and contents*/
-    .section-heading{
-        text-align: center;
-        /* margin-left: 0px; */
-    }
-
     .bio{
         margin-right: 3rem;
         margin-left: 3rem;
         margin-bottom: 10rem;
     }
-
+    
     .bio p{
         margin-left: 3rem;
         margin-right: 3rem;
     }
-
-    /* Centrally aligns contact information */
+    
     .contact-info{
         text-align: center;
         margin-left: 2rem;
@@ -531,10 +443,6 @@ html,
     }
 
     .project{
-        /* border: var(--border); */
-        /* margin: 1rem; */
-        /* height: 20rem; */
-        /* width: 20rem; */
         padding-bottom: 3rem;
 
     }
@@ -544,16 +452,12 @@ html,
         width: 24rem;
         padding: 0rem 0;
         margin-bottom: .75rem;
-        /* border: var(--border); */
-        border-radius: var(--border-radius);
     }
 
     .creations h3{
         font-size: 2.5rem;
         line-height: 2rem;
-        font-weight: 600;
         color: var(--tertiary);
-        font-variant: small-caps;
     }
     
     .creations h5{
@@ -577,6 +481,13 @@ html,
         font-size: 3rem;
     }
 
+    nav{
+        display: flex; 
+        justify-content:center;
+        text-align: center;
+        align-items: center;
+    }
+
     .nav a{
         font-size: 1.75rem;
         text-align: center;
@@ -585,87 +496,40 @@ html,
         padding: .5rem 1.5rem;
     }
     
-    nav{
-        display: flex; 
-        justify-content:center;
-        text-align: center;
-        align-items: center;
-    }
-
     .section-heading{
         font-size: 2.25rem;
     }
-
+   
     .project{
-        /* border: var(--border); */
-        /* margin: 1rem; */
-        /* height: 20rem; */
-        /* width: 20rem; */
-        padding-bottom: 3rem;
-
-    }
-    
-    .project img{
-        height: 13rem;
-        width: 20rem;
-        padding: 0rem 0;
-        margin-bottom: .75rem;
-        /* border: var(--border); */
-        border-radius: var(--border-radius);
-    }
-
-    .creations h3{
-        font-size: 2rem;
-        line-height: 2rem;
-        font-weight: 600;
-        color: var(--tertiary);
-        font-variant: small-caps;
-    }
-    
-    .creations h5{
-        display: block;
-    }
-
-    .creations a{
-        font-size: 1.25rem;
-        display: block;
-        line-height: 1.5rem;
-    }
-    
-    .project{
-        /* border: var(--border); */
-        /* margin: 1rem; */
-        /* height: 20rem; */
-        /* width: 20rem; */
         padding-bottom: 3rem;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
-        /* align-content:flex-start; */
         position: relative;
-        /* margin-left: 5%; */
-        /* text-align: left; */
     }
 
-
+    .project img{
+        height: 13rem;
+        width: 20rem;
+        padding: 0rem 0;
+        margin-bottom: .75rem;
+    }
+ 
+    .creations h3{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    
     .creations h5{
         display: inline;
-        /* text-align: left; */
     }
     
     .creations a{
-        font-size: 1rem;
+        font-size: 1.0rem;
         display: inline;
-        /* text-align: left; */
     }
-    
-    .card-text{
-        /* text-align: left; */
-        /* padding-left: 1rem; */
-    }
-
-    
+        
     .emailLogo{
         display:inline;
     }
@@ -688,177 +552,22 @@ html,
 @media screen and (max-width: 800px) {
     /* Aligns project cards vertically with Focus project on top*/
     
-    .myName{
-        font-size: 3rem;
-    }
-
-    .nav a{
-        font-size: 1.75rem;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        padding: .5rem 1.5rem;
+    header{ 
+        background-image: linear-gradient(to bottom, var(--quaternary), var(--quaternary), var(--quinary),var(--quinary));
+        width:100%;
+        position:fixed;
+        height: 9.5rem;
+        
     }
     
     nav{
         display: none; 
     }
 
-    .section-heading{
-        font-size: 2.25rem;
-    }
-
-    .card {
-        width: 10rem;
-    }
-    
-    .project img{
-        /* height: 12rem; */
-        /* width: 18rem; */
-        padding: 0rem 0;
-        margin-bottom: .75rem;
-        padding-right: .5rem;
-        
-        /* border: var(--border); */
-        /* border-radius: var(--border-radius); */
-    }
-
-    .creations h3{
-        font-size: 1.4rem;
-        line-height: 1.0rem;
-        font-weight: 600;
-        color: var(--tertiary);
-        font-variant: small-caps;
-    }
-    
-    /* .creations h5{
-        flex-direction: column;
-        display: none;
-    } */
-    .creations{
-        margin-left: 0;
-    }
-    
-    .creations a{
-        font-size: 1.rem;
-        /* display: block; */
-        line-height: 1.1rem;
-    }
-    
-    .contactPage{ 
-        /* margin: 3rem; */
-    }
-    
-    /* .contactForm{
-        width: 6rem;
-    } */
-    
-    .contactForm {
-        display: flex;
-        /* flex-direction: column; */
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .contactForm textarea,
-    .contactForm input{
-        color: var(--tertiary);
-        font-weight: 700;
-        letter-spacing:.05rem;
-    }
-    
-    .form input {
-        margin: .5rem;
-        width: 15rem;
-        border-radius: .2rem;
-    }
-    
-    .messageBox {
-        margin: .5rem;
-        height: 10rem;
-        width: 15rem;
-        border-radius: .2rem;
-    }
-
-    .form button {
-        background-color: var(--tertiary);
-        color: var(--quinary);
-        margin: .5rem;
-        width: 15rem;
-        border-radius: .2rem;
-    }
-
-    .resume{
-        margin: 0rem;
-    }
-    
-    .resume p{
-        font-size: 1rem;
-    }
-    
-    
-    .topnav {
-        /* display: block; */
-        /* display: none; */
-        /* overflow: hidden; */
-        /* background-color: rgba(0, 0, 0, 0); */
-        /* position: relative; */
-        /* top:0; */
-        /* height: 4rem; */
-        /* align-content: center; */
-        /* vertical-align: middle; */
-    }
-      
-    .topnav #myLinks {
-        /* display: block; */
-    }
-    
-    .topnav p {
-        /* color: var(--primary); */
-        /* padding: .5rem; */
-        /* text-decoration: none; */
-        /* font-size: 1.5rem; */
-        /* display: block; */
-    }
-    
-    header{ 
-        background-image: linear-gradient(to bottom, var(--quaternary), var(--quaternary), var(--quinary),var(--quinary));
-        width:100%;
-        position:fixed;
-        height: 8rem;
-
-    }
-    .myNameContainer{
-        margin-bottom: 0;
-    }
-
-    .section-heading{
-        margin-top: 0;
-        padding-top: 0;
-    }
-
-    .topnav a.icon {
-        /* background: var(--secondary); */
-        /* color: var(--teal); */
-        /* display: block; */
-        /* font-size: 1.5rem; */
-        /* padding: 1rem 1rem; */
-        /* position: absolute; */
-        /* right: 0; */
-        /* top: 0; */
-    }
-    
-    .topnav a:hover {
-        /* background-color: var(--teal); */
-        /* color: var(--secondary); */
-    }
-
     .topnav {
         display: block;
         position: fixed;
-        /* overflow: hidden; */
         background-color: rgba(255, 255, 255, 0);
-        /* position: relative; */
         top: 0;
         right: 0;
         z-index: 3 !important;
@@ -886,7 +595,6 @@ html,
         padding: 14px 16px;
         text-decoration: none;
         font-size: 17px;
-        /* display: block; */
         color: var(--primary);
     }
 
@@ -899,15 +607,78 @@ html,
         width: 3rem;
         right: 0;
         top: 0;
-    }
+    }    
     
-    .topnav a:hover {
-        /* background-color: #ddd; */
-        /* color: black; */
+    .myNameContainer{
+        margin-bottom: 0;
+        margin-top: 1.5rem;
     }
-    
-}
+        
+    .myName{
+        font-size: 3rem;
+    }
 
+    .section-heading{
+        font-size: 2.25rem;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    
+    .creations{
+        margin-left: 0;
+    }
+
+    .card {
+        width: 10rem;
+    }
+    
+    .project img{
+        padding: 0rem 0;
+        margin-bottom: .75rem;
+    }
+
+    .creations h3{
+        font-size: 1.4rem;
+        line-height: 1.0rem;
+    }
+    
+    .creations a{
+        font-size: 1.rem;
+        line-height: 1.1rem;
+    }
+    
+    .contactForm {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .form input {
+        margin: .5rem;
+        width: 15rem;
+    }
+        
+    .messageBox {
+        margin: .5rem;
+        height: 10rem;
+        width: 15rem;
+    }
+
+    .form button {
+        background-color: var(--tertiary);
+        color: var(--quinary);
+        margin: .5rem;
+        width: 15rem;
+    }
+
+    .resume{
+        margin: 0rem;
+    }
+    
+    .resume p{
+        font-size: 1rem;
+    }
+}
 
 /* Shrink fonts for better viewing on smaller displays */
 @media screen and (max-width: 600px) {
@@ -921,68 +692,15 @@ html,
         font-size: 1rem;
     }
 
-    /* Shrinks Project cards*/
-    /* .project{
-        margin: 40 px;
-        height: 150px;
-        width: 150px;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        position: relative;
+    .creations{
+        /* margin-right: 15%; */
     }
-    
-    .project img{
-        height: 125px;
-        padding: 12.5px;
-        border: var(--border);
-        border-radius: var(--border-radius);
-    } */
 
     .project{
-        /* border: var(--border); */
-        /* margin: 1rem; */
-        /* height: 20rem; */
-        /* width: 20rem; */
         padding-bottom: 3rem;
-
     }
   
-    .creations{
-        margin-right: 15%;
-    }
-
-    /* .project img{
-        height: 9rem;
-        width: 16rem;
-        padding: 0rem 0;
-        margin-bottom: .75rem;
-        border: var(--border);
-        border-radius: var(--border-radius);
-    }
-
-    .creations h3{
-        font-size: 2.5rem;
-        line-height: 2rem;
-        font-weight: 600;
-        color: var(--tertiary);
-        font-variant: small-caps;
-    }
-    
-    .creations h5{
-        flex-direction: column;
-        display: none;
-    } */
-
-    /* .creations a{
-        font-size: 1.5rem;
-        display: block;
-        line-height: 1.5rem;
-    } */
-    
-
-     .creations img{
+    .creations img{
         display: block;
      }
 
@@ -991,22 +709,18 @@ html,
         margin-left: 2rem;
         margin-right: 2rem;
     }
-}
-
-
-.active {
-    /* background-color: #04AA6D; */
-    /* color: white; */
-}
-
-@media screen and (max-width: 600px) {
+    
+    header{
+        padding-top: 3rem;
+        height: 12rem;
+    }
+    
+    .myNameContainer{
+        margin-top: 0;
+    }
 
     .myName{
         text-align: center;
     }
-
-    header{
-        padding-top: 3rem;
-    }
-
 }
+

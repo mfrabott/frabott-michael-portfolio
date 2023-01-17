@@ -3,7 +3,7 @@ import avatar from '../../assets/images/frabott-wave-2.gif'
 
 export default function About() {
   return (
-    <section className="bio">
+    <section className="bio container">
       
       <div className='avatarContainer'>
         <img className="avatar" src={avatar} height={150} width={150} alt="Animated graphic of person with glasses in a white hoodie waving."></img>
