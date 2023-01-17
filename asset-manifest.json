@@ -1,28 +1,37 @@
 {
   "files": {
-    "main.css": "/frabott-michael-portfolio/static/css/main.381febc6.css",
-    "main.js": "/frabott-michael-portfolio/static/js/main.bfd102cf.js",
+    "main.css": "/frabott-michael-portfolio/static/css/main.3b78c1a5.css",
+    "main.js": "/frabott-michael-portfolio/static/js/main.474c0e07.js",
     "static/media/Work-Day-Scheduler.gif": "/frabott-michael-portfolio/static/media/Work-Day-Scheduler.f635b982f86b3605daaa.gif",
     "static/media/frabott-wave-2.gif": "/frabott-michael-portfolio/static/media/frabott-wave-2.44739b93ea3f0462a7ea.gif",
     "static/media/Code-Quiz.gif": "/frabott-michael-portfolio/static/media/Code-Quiz.0d543f7a3415145f3baa.gif",
     "static/media/screencapture-portfolio-mobile.png": "/frabott-michael-portfolio/static/media/screencapture-portfolio-mobile.5a816722076d5de6c30e.png",
+    "static/media/lake-image.jpg": "/frabott-michael-portfolio/static/media/lake-image.2747a761baa8c1eadcd6.jpg",
     "static/media/screencapture-portfolio-desktop.png": "/frabott-michael-portfolio/static/media/screencapture-portfolio-desktop.8934e3797b2893d5a321.png",
     "static/media/moreThanAGame.png": "/frabott-michael-portfolio/static/media/moreThanAGame.a85f24c8b27e28415b2a.png",
     "static/media/moreThanAGame2.png": "/frabott-michael-portfolio/static/media/moreThanAGame2.8af74b21aba543d18c15.png",
+    "static/media/SouthernAirePersonalUseOnly-Ky9A.ttf": "/frabott-michael-portfolio/static/media/SouthernAirePersonalUseOnly-Ky9A.512a15a39d997d908144.ttf",
     "static/media/moreThanAGame3.png": "/frabott-michael-portfolio/static/media/moreThanAGame3.650ec4c4864b06feece4.png",
     "static/media/github.PNG": "/frabott-michael-portfolio/static/media/github.abb5df5cb6033db6a886.PNG",
     "static/media/Frabott-Michael-Resume-2023.01.02.pdf": "/frabott-michael-portfolio/static/media/Frabott-Michael-Resume-2023.01.02.a4b65e0367ed6f3420c4.pdf",
+    "static/media/DeLatto.ttf": "/frabott-michael-portfolio/static/media/DeLatto.90e1873984ed022ae832.ttf",
+    "static/media/Michroma.ttf": "/frabott-michael-portfolio/static/media/Michroma.872a08da43365276322f.ttf",
     "static/media/weather-dashboard.png": "/frabott-michael-portfolio/static/media/weather-dashboard.ca8ede810a7e93c16968.png",
     "static/media/graphical-rest.png": "/frabott-michael-portfolio/static/media/graphical-rest.cf7dd016de0ab48df674.png",
+    "static/media/pakenhamrg.otf": "/frabott-michael-portfolio/static/media/pakenhamrg.3b1770da134a4797a3b8.otf",
     "static/media/JATE.png": "/frabott-michael-portfolio/static/media/JATE.ed6d416c8b06b3ac43a3.png",
+    "static/media/WoodenNickelNF.ttf": "/frabott-michael-portfolio/static/media/WoodenNickelNF.c5fa2494868db368c973.ttf",
     "static/media/note-taker.png": "/frabott-michael-portfolio/static/media/note-taker.8a1bf95589965e0b48b6.png",
+    "static/media/VonderClean.ttf": "/frabott-michael-portfolio/static/media/VonderClean.39edbe3d20b3e9159cf8.ttf",
+    "static/media/StonyIslandNF.ttf": "/frabott-michael-portfolio/static/media/StonyIslandNF.17b6c3d29709de05ac95.ttf",
     "static/media/phoneicon.png": "/frabott-michael-portfolio/static/media/phoneicon.3ded8f34f1f80b378ba8.png",
+    "static/media/CottageSans.ttf": "/frabott-michael-portfolio/static/media/CottageSans.1a5e1bc2372f606775d8.ttf",
     "index.html": "/frabott-michael-portfolio/index.html",
-    "main.381febc6.css.map": "/frabott-michael-portfolio/static/css/main.381febc6.css.map",
-    "main.bfd102cf.js.map": "/frabott-michael-portfolio/static/js/main.bfd102cf.js.map"
+    "main.3b78c1a5.css.map": "/frabott-michael-portfolio/static/css/main.3b78c1a5.css.map",
+    "main.474c0e07.js.map": "/frabott-michael-portfolio/static/js/main.474c0e07.js.map"
   },
   "entrypoints": [
-    "static/css/main.381febc6.css",
-    "static/js/main.bfd102cf.js"
+    "static/css/main.3b78c1a5.css",
+    "static/js/main.474c0e07.js"
   ]
 }
