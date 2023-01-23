@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/frabott-michael-portfolio/static/css/main.3b78c1a5.css",
-    "main.js": "/frabott-michael-portfolio/static/js/main.474c0e07.js",
+    "main.js": "/frabott-michael-portfolio/static/js/main.e952cb63.js",
     "static/media/Work-Day-Scheduler.gif": "/frabott-michael-portfolio/static/media/Work-Day-Scheduler.f635b982f86b3605daaa.gif",
     "static/media/frabott-wave-2.gif": "/frabott-michael-portfolio/static/media/frabott-wave-2.44739b93ea3f0462a7ea.gif",
     "static/media/Code-Quiz.gif": "/frabott-michael-portfolio/static/media/Code-Quiz.0d543f7a3415145f3baa.gif",
     "static/media/screencapture-portfolio-mobile.png": "/frabott-michael-portfolio/static/media/screencapture-portfolio-mobile.5a816722076d5de6c30e.png",
     "static/media/lake-image.jpg": "/frabott-michael-portfolio/static/media/lake-image.2747a761baa8c1eadcd6.jpg",
     "static/media/screencapture-portfolio-desktop.png": "/frabott-michael-portfolio/static/media/screencapture-portfolio-desktop.8934e3797b2893d5a321.png",
+    "static/media/landingpage.png": "/frabott-michael-portfolio/static/media/landingpage.75a57eaa8869b9e000ea.png",
     "static/media/moreThanAGame.png": "/frabott-michael-portfolio/static/media/moreThanAGame.a85f24c8b27e28415b2a.png",
     "static/media/moreThanAGame2.png": "/frabott-michael-portfolio/static/media/moreThanAGame2.8af74b21aba543d18c15.png",
     "static/media/SouthernAirePersonalUseOnly-Ky9A.ttf": "/frabott-michael-portfolio/static/media/SouthernAirePersonalUseOnly-Ky9A.512a15a39d997d908144.ttf",
@@ -28,10 +29,10 @@
     "static/media/CottageSans.ttf": "/frabott-michael-portfolio/static/media/CottageSans.1a5e1bc2372f606775d8.ttf",
     "index.html": "/frabott-michael-portfolio/index.html",
     "main.3b78c1a5.css.map": "/frabott-michael-portfolio/static/css/main.3b78c1a5.css.map",
-    "main.474c0e07.js.map": "/frabott-michael-portfolio/static/js/main.474c0e07.js.map"
+    "main.e952cb63.js.map": "/frabott-michael-portfolio/static/js/main.e952cb63.js.map"
   },
   "entrypoints": [
     "static/css/main.3b78c1a5.css",
-    "static/js/main.474c0e07.js"
+    "static/js/main.e952cb63.js"
   ]
 }
